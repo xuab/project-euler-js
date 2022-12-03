@@ -1,15 +1,14 @@
 {
   "name": "project-euler-js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "JavaScript solutions to the Project Euler problems",
   "author": "Stéphane Clairbaux <stephane@clairbaux.com>",
   "private": true,
+  "type": "module",
   "scripts": {
-    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
-    "test:watch": "npm test -- --watch"
+    "test": "tap tests/euler.test.js --no-coverage-report --reporter=spec"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "jest": "^27.5.1"
+    "tap": "^16.3.2"
   }
 }
